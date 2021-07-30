@@ -1,20 +1,18 @@
-Workflow:
+Description of the repository
 
 requirements.txt file:
-- requirements file contains all packages used in MDA course (as of 4/9/2021; https://github.com/despiegj/goz39a.git) 
-- Communicate in team meetings if a new package was added between meetings. 
-- At the end of the project, trim down to packages that were actually utilized.
+- requirements file contains all packages necessary to run the code
 
-'protect' folder:
-- Place files here that should not be changed by other team members between meetings. 
 
 'work' folder:
-- Files in 'work' can be changed by all team members between meetings.
-- Branching is only done within 'work'.
-- If deemed necessary, communicate/discuss/agree before merging contributions to a file in 'work'.
+- Contains the 3 Jupyter notebooks. 
+   * DTM_paragraph: Code for making a dynamic Topic Model for the United Nation Speeches Corpus
+   * LDA_models_paragraph_final: Code for making  static Topic Model for the United Nation Speeches Corpus
+   * bigram_trigram_speeches : Code related to making bi_trigram phrasers for the data preprocessing in the main code files.
+- The pretrained LDA(static) models can be found for every decade in the folders 70s-2000s 
+- The DTM_model files contain additional BoW files, indeed someone wants to replicate the exact study
+- The bigram_trigram_speeches_model folder contains the files needed if the user wants to use a pre-trained phraser
 
-'production' folder:  
-- During team meetings:
-   1) Move intermediate results to 'production' (jupyter nbs, python scripts, etc.).
-   2) Also, create copies of the intermediate results in 'work'.
-   3) Copies of intermediate results in work are new starting position for the next week´s cycle of collaboration. 
+Note: due to the vast size of the DTM model, a pre-trained version is  not available on github (The model had a 500mb size).
+Note2: the DTM model takes 30-40hours to run on a standard computer. If a user is interested, you can always contact me, and I will provide a download link for the already trained DTM model. 
+
